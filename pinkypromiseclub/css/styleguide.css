@@ -254,7 +254,7 @@ hr {
 
 
 .navbar {
-   background-color:var(    --color-main-dark);
+   background-color:var(--color-main-dark);
    color:var(--color-main-light);
    line-height:var(--header-height);
 }
@@ -266,6 +266,7 @@ hr {
 .navbar a {
    padding:0 0.5em;
 }
+
 
 
 
@@ -308,6 +309,13 @@ hr {
       border:2px solid var(--color-alt-dark);
    }
 
+   .card.hard2 {
+       background-color:var(--color-main-medium);
+
+      border-radius:0.2em;
+      border:2px solid var(--color-alt-dark);
+   }
+
    .card.dark {
       background-color:var(--color-main-dark);
       color:var(--color-white);
@@ -315,6 +323,11 @@ hr {
    .card.medium {
       background-color:var(--color-main-medium);
    }
+
+    .card.light {
+      background-color:var(--color-main-light);
+   }
+
 
 
    .card.rainbow {
@@ -327,6 +340,18 @@ hr {
 
 
 
+p.itemtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color:var(--color-alt-dark);
+    font-size: 1em;
+
+}
+
+p.itemprice {
+
+}
+
 .well {
     padding: 0.5em;
     background-color: var(--color-main-light);
@@ -335,4 +360,28 @@ hr {
 .well .well {
     background-color: var(   --color-neutral-light);
 }
+
+
+.icon-bar {
+  width: 100%;
+ background-color:var(--color-main-light);
+overflow: auto;
+
+}
+
+.icon-bar a {
+  float: left;
+  width: 10%;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  border-radius:2em;
+}
+
+.icon-bar a:hover {
+ background-color:var(--color-main-medium );
+
+}
+
 

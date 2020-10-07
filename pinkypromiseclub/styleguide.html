@@ -38,7 +38,7 @@
       <h1>Typography</h1>
     
 
-      <div class="card soft">
+      <div class="card light">
 
          <h2>Headings</h2>
 
@@ -78,7 +78,7 @@
 
 
 
-     <div class="card soft">
+     <div class="card light">
 
          <h2>Paragraphs</h2>
         	
@@ -105,8 +105,8 @@
    <h1>Grid</h1>
 
 
-      <div class="card medium">
-         <h3 id="basic-grid">Basic Grid</h3>
+      <div class="card hard2">
+         <h2 id="basic-grid">Basic Grid</h2>
 
          <div class="grid">
             <!-- div.col-6>{Column 6} -->
@@ -140,9 +140,9 @@
 
 
    <div class="container">
-      <div class="card medium">
+      <div class="card hard2">
          <div>
-            <h3>Complex Grids</h3>
+            <h2>Complex Grids</h2>
          </div>
 
          <div class="grid">
@@ -177,9 +177,9 @@
 
 
    <div class="container">
-      <div class="card medium">
+      <div class="card hard2">
          <div>
-            <h3>Responsive Grids</h3>
+            <h2>Responsive Grids</h2>
          </div>
 
          <div class="grid">
@@ -226,59 +226,83 @@
 
 
    <div class="container">
-      <div class="card soft">
+      <div class="card light">
          <div>
-            <h3>Layout</h3>
+            <h2>Layout</h2>
          </div>
       </div>
 
-      <div>
-         <h3>Title</h3>
-      </div>
+
+
+    <div class="card light">
+         <h2>Item Boxes</h2>
+     
       <div class="grid gap">
          <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
+       
          <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 1</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            <div class="card hard">
+
+            	<img src="img/bag.jpg" width="100%">
+
+               <p class="itemtitle">kanken Mini Backpack</p>
+               <p class="itemprice">$ 80.00</p>
             </div>
+
          </div>
+
+
          <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 2</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+
+            <div class="card hard">
+
+            	<img src="img/teddy.jpg" width="100%">
+
+               <p class="itemtitle">Carebear 12" Plush</p>
+               <p class="itemprice">$ 24.99</p>
             </div>
+
+
          </div>
+
+
          <div class="col-xs-12 col-md-4">
-            <div class="card soft"><h3>Item 3</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+
+            <div class="card hard">	
+
+            	<img src="img/converse.jpg" width="100%">
+
+               <p class="itemtitle">Converse Chuck Taylor High Top</p>
+               <p class="itemprice">$ 55.00</p>
             </div>
+
          </div>
+
       </div>
+
    </div>
 
 
 
    <div class="container" id="card">
-      <h2>Card</h2>
+      <h1>Card</h1>
 
       <div class="well">
 
-      <h3>Basic Card</h3>
+      <h2>Light Card</h2>
 
       <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
 
-      <h3>Soft Card</h3>
-
-      <div class="card soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
-
-      <h3>Hard Card</h3>
+  
+      <h2>Hard Card</h2>
 
       <div class="card hard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
 
-      <h3>Medium Card</h3>
+      <h2>Medium Card -Basic </h2>
 
       <div class="card medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
 
-      <h3>Dark Card</h3>
+      <h2>Dark Card</h2>
 
       <div class="card dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
 
@@ -289,11 +313,11 @@
 
 
    <div class="container" id="navigations">
-      <h2>Navigations</h2>
+      <h1>Navigations </h1>
 
       <script>
       const makeNav = (classes='') => {
-         const links = ['home','store','about','cart'];
+         const links = ['HOME','ABOUT','STORE','SALE'];
          document.write(`
          <div>
          <nav class="${classes}">
@@ -306,16 +330,27 @@
       }
       </script>
 
-   
-      <div class="card soft">
-         <h3>Flex Nav</h3>
-         <script>makeNav('nav flex')</script>
-      </div>
-
-      <div class="card soft">
-         <h3>Pills Nav</h3>
+      <div class="card light">
+         <h2>Pills Nav</h2>
          <script>makeNav('nav pills')</script>
       </div>
+
+
+
+      <div class="card light">
+
+		<div class="icon-bar">
+			<h2>Icon Nav</h2>
+
+ 			<a href="#"><img src="img/search.svg" width="30p"></a> 
+ 	 		<a href="#"><img src="img/cart.svg" width="30p"></a> 
+ 	
+		</div>
+	</div>
+
+
+
+
 
       
    </div>
