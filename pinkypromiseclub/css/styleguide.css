@@ -205,6 +205,10 @@ hr {
 
 .button {
 
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
   border: none;
   color:var(--color-alt-dark);
   padding: 15px 32px;
@@ -240,6 +244,8 @@ hr {
 
 .button2:hover {
           background-color:var(--color-main-dark);
+         color:var(--color-main-light);
+
 
          
 }
@@ -250,7 +256,7 @@ hr {
 }
 
 
-.button3:hover{ background-color:var(--color-alt-medium);
+.button3:hover{ background-color:var(--color-alt-dark);
           color:var(--color-alt-light);
 }
 

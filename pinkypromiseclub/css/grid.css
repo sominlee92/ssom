@@ -33,6 +33,10 @@
 .col-11 { grid-column: span 11; }
 .col-12 { grid-column: span 12; }
 
+
+
+
+
 /* Extra Small */
 @media (min-width:0) {
    .col-xs-1 { grid-column: span 1; }
