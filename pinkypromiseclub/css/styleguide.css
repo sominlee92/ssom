@@ -203,6 +203,57 @@ hr {
 
 
 
+.button {
+
+  border: none;
+  color:var(--color-alt-dark);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:2em;
+
+}
+
+
+
+.button1 { background-color:var(--color-main-light);
+           border-radius:2em;
+           border:2px solid var(--color-alt-dark);
+
+          } 
+
+.button1:hover {
+          background-color:var(--color-main-dark);
+          border-radius:2em;
+          border:2px solid var(--color-alt-dark);
+                    color:var(--color-main-light);
+
+         
+}
+
+.button2 { background-color:var(--color-main-medium);}
+
+
+.button2:hover {
+          background-color:var(--color-main-dark);
+
+         
+}
+
+
+.button3 { background-color:var(--color-main-dark);
+          color:var(--color-alt-light);
+}
+
+
+.button3:hover{ background-color:var(--color-alt-medium);
+          color:var(--color-alt-light);
+}
+
 /* Component Classes */
 .nav ul {
    list-style-type:none;
@@ -385,3 +436,11 @@ overflow: auto;
 }
 
 
+
+
+footer {
+     background-color:var(--color-alt-dark);
+   color:var(--color-main-light);
+   line-height:var(--header-height);
+
+}
