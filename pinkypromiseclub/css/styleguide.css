@@ -638,7 +638,10 @@ padding: 0.2em;
 
 
 footer {
-  
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: absolute;
 
   background-color:var(--color-alt-dark);
