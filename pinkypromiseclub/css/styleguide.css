@@ -412,12 +412,84 @@ overflow: auto;
 
 
 
-.box.white {
+.white {
 
   width: 600px;
   height: 600px;
   background-color: white;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.box.pink {
+  background-color:var(--color-main-medium);
+
+}
+
+.box.navy {
+  background-color:var(--color-alt-dark);
+
+
+}
+
+
+
+.form-input {
+    display: inline-block;
+    width: 100%;
+    border-width: 0;
+    background-color: transparent;
+    font:inherit;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid var(--color-alt-dark);
+    outline: 0;
+}
+
+
+.form-control {
+    margin: 1em 0;
+}
+.form-label {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--color-alt-dark);
+}
+
+.btn,
+.form-button {
+    display: inline-block;
+    width: 100%;
+    border-width: 0;
+    font: inherit;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    background-color: var(--color-neutral-light);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance:none;
+}
+.btn:hover,
+.form-button:hover {
+   text-decoration:none;
+}
+
+   .btn.inline {
+      width:initial;
+   }
+
+   .btn.sell {
+      background-color:var(--color-purchase);
+   }
+
+
 
 
 
