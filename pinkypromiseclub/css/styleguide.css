@@ -412,6 +412,15 @@ overflow: auto;
 
 
 
+.box.white {
+
+  width: 600px;
+  height: 600px;
+  background-color: white;
+}
+
+
+
 footer {
   width:100%;
   display: absolute;
