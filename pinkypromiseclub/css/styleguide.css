@@ -635,7 +635,10 @@ padding: 0.2em;
     vertical-align: text-bottom;
 }
 
-
+.footer-inside 
+{
+margin-left: 10%;
+}
 
 footer {
    position: fixed;
@@ -643,6 +646,7 @@ footer {
   bottom: 0;
   width: 100%;
   display: absolute;
+
 
   background-color:var(--color-alt-dark);
   color:var(--color-main-light);
