@@ -8,8 +8,8 @@
     --color-main-medium: #ffa8d1;
     --color-main-dark: #ff004c;
 
-    --color-alt-light: #f5f9ff;
-    --color-alt-medium: #003acc;
+    --color-alt-light: #e9f3ff;
+    --color-alt-medium: #7aa7ff;
     --color-alt-dark: #00203f;
     
     --color-warning: #003acc;
@@ -233,16 +233,20 @@ hr {
 /* Component Classes */
 .nav ul {
    list-style-type:none;
-   margin-top:0;
-   margin-bottom:0;
-   padding-left:0;
+    
+
+   padding-left:0;      
+   background-color: var(--color-main-medium);
+
+
 }
    .nav a {
       display:block;
       padding:0.2em 0.5em;
+      margin: 1em;
    }
    .nav a:hover {
-      background-color:var(--color-main-medium);
+      background-color:var(--color-main-light);
       color: var(--color-white);
       text-decoration:none;
    }
@@ -262,6 +266,7 @@ hr {
    .nav.pills a {
       border-radius:2em;
       padding:0.5em 1em;
+      
    }
 
 
@@ -366,6 +371,46 @@ hr {
 
 
 
+/* TABLES */
+.table {
+   width:100%;
+   border-collapse:collapse;
+}
+
+
+.table td,
+.table th {
+   text-align:left;
+   padding:0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+   background-color:var(--color-alt-dark);
+}
+
+
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+   border-top:1px solid var(--color-alt-dark);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+   border-left:1px solid var(--color-alt-dark);
+}
+
+
+.table.lined.all,
+.table.lined.border {
+   border:1px solid var(--color-alt-dark);
+}
+
+
+
+
+
 p.itemtitle {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
@@ -389,26 +434,32 @@ p.itemprice {
 
 
 .icon-bar {
-  width: 100%;
- background-color:var(--color-main-light);
+width: 100%;
+background-color:var(--color-main-dark);
 overflow: auto;
+padding: 0.2em;
+
 
 }
 
 .icon-bar a {
-  float: left;
+  float: right;
   width: 10%;
   text-align: center;
   transition: all 0.3s ease;
-  color: white;
+  color: var(--color-main-light);
   font-size: 36px;
   border-radius:2em;
+  margin:0.2em;
 }
 
 .icon-bar a:hover {
- background-color:var(--color-main-medium );
+ background-color:var(--color-main-light );
+
 
 }
+
+
 
 
 
@@ -418,26 +469,6 @@ overflow: auto;
   height: 600px;
   background-color: white;
 }
-
-.box {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-.box.pink {
-  background-color:var(--color-main-medium);
-
-}
-
-.box.navy {
-  background-color:var(--color-alt-dark);
-
-
-}
-
 
 
 .form-input {
@@ -488,6 +519,79 @@ overflow: auto;
    .btn.sell {
       background-color:var(--color-purchase);
    }
+
+.hotdog {
+   display: inline-flex;
+   width: 100%;
+   /* line-height: 3rem; */
+   font: inherit;
+   background-color: var(--color-main-medium);
+   padding: 0.5em 1.5em;
+   border-radius: 2em;
+   border-width:0;
+   outline:0;
+}
+   .hotdog.dark {
+      background-color: var(--color-neutral-dark);
+      color: var(--color-neutral-light);
+   }
+
+   .hotdog input {
+      background-color:transparent;
+      border-width:0;
+      flex:1 1 100%;
+      outline:0;
+      font:inherit;
+   }
+
+
+
+.form-select>select {
+    padding: 0.5em 1em;
+    background-color: var(--color-alt-light);
+    border-width: 0;
+    border-radius: 0.3em;
+    cursor: pointer;
+    -webkit-appearance:none;
+    display:inline-block;
+    width:100%;
+    font:inherit;
+    outline:0;
+}
+
+.form-select {
+   position:relative;
+}
+
+.form-select::after {
+   position:absolute;
+   content:'\25B2';
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+   font-size:0.9em;
+   top:50%;
+   transform:translateY(50%);
+   right:0.3rem;
+   pointer-events:none;
+   color:var(--color-alt-dark);
+}
+
+
+
+
+.select.margin {
+  margin: 1em;
+}
+
+
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: text-bottom;
+}
 
 
 
