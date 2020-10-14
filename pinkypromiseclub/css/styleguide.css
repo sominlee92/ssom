@@ -223,11 +223,47 @@ hr {
 
 .button3 { background-color:var(--color-main-dark);
           color:var(--color-alt-light);
+
 }
 
 
 .button3:hover{ background-color:var(--color-alt-dark);
           color:var(--color-alt-light);
+}
+
+.button4 { 
+  background-color:var(--color-main-medium);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 1.3em;
+}
+
+
+.button4:hover {
+          background-color:var(--color-main-dark);
+         color:var(--color-main-light);
+           padding: 10px 40px;
+        font-size: 20px;
+                  margin-right: 1.3em;
+
+
+
+         
+}
+
+
+
+.button5 { background-color:var(--color-main-dark);
+          color:var(--color-alt-light);
+            padding: 10px 40px;
+  font-size: 20px;
+}
+
+
+.button5:hover{ background-color:var(--color-alt-dark);
+          color:var(--color-alt-light);
+            padding: 10px 40px;
+  font-size: 20px;
 }
 
 /* Component Classes */
@@ -579,9 +615,15 @@ padding: 0.2em;
 
 
 
-
 .select.margin {
   margin: 1em;
+}
+
+.add {
+  margin-top: 1em;
+}
+.buy {
+  margin-top: 1em;
 }
 
 
